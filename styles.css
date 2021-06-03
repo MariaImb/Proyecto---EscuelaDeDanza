@@ -1,63 +1,203 @@
-/*hola*/
+/*defino una paleta de colores, : (para pseudo selectores) root es un pseudo elemento, es un elemento que no existe html, es una forma de almacenar variables de css como custom properties*/
 
+:root {
+    --blanco: #f2f2f2;
+    --primario: #3b8c8c;
+    --secundario: #f29863;
+    --terciario: #72aeb1;
+    --grisoscuro:  rgba(80, 78, 78);
+    --verde: #1CA68D;
+    --verdeoscuro: #0c776b;
 
-.preheader {
-    background-image: url(../imagenes/fondoverde.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%; 
-    height: 70px;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-.header {
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: white;
+html{
+    box-sizing: border-box; /* apply a natural box layout model to all elements, but allowing components to change */
 }
 
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+  
+
+.nuevonav{
+    background-color: rgba(80, 78, 78)!important; 
+}
+.contenidonav {
+
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.textonav {
+    color: #f2f2f2!important;;
+}
 
 .main {
-    background-image: url(../imagenes/fondoverde.png);
+
+    margin-top: 170px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 1000px;
 
 }
-.contnav {
-    margin-right: 50px;
+
+
+.contenedor-escuela{
+    background-image: url(/imagenes/bailarina2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:100%;
+    height: 80%;
+
 }
 
-.navbar ul{
+.contenido-escuela{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb( 59 140 140 / 30%);
+    height: 800px;
 }
 
-.navbar ul li{
-    display: flex;
+.contenido-escuela h1{
+    text-align: center;
+    color: #f29863;
+    font-size: 70px;
+    font-style: italic;
+    text-shadow: 1px 1px 3px var(--primario);
+    
+}
+
+.contenido-escuela h2{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 3px var(--secundario);
+    
 }
 
 .navbar ul li a:hover{
-    color:#0D7360;
+    color:#f29863!important;
+    
 }
 
+
+
 .navbar ul li a{
-    text-decoration: none;
-    display: inline-block;
-    color: #D97E4A;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     margin-right: 20px;
     margin-left: 20px;
+    text-transform: uppercase;
+
+}
+.dropdown-item:hover {
+    width: 80%; 
+}
+
+.contenedor-index {
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.escuela h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color:var(--secundario);
+}
+
+.escuela p{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--primario);
+    width: 65%;
+    text-align: justify;
+    margin: auto;
+}
+
+.escuela img{
+    align-items: center;
+    margin: auto;
+
+}
+
+.contenedor-staff{
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    width: 80%;
+
+}
+
+.staff h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color:#ffab7b;
+    text-shadow: 1px 1px 0.5px var(--grisoscuro);
+}
+
+.staff h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #beeef1;
+    text-shadow: 1px 1px 0.5px var(--grisoscuro);
+}
+
+.staff{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 8%;
+    text-align: left;
+ 
+}
+
+.cardstaff{
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 20px;
+    background-color:var(--primario);
 
 }
 
 
+.container{
+    padding-top: 40px !important;
+    color: #ffab7b;
+    font-family: 'Montserrat', sans-serif !important;
+    text-shadow: 1px 1px 0.5px var(--grisoscuro);
 
-.logo {
-    margin-left: 40px;
+}
 
+.fondocontacto{
+    background-color: var(--primario);
+    height: 600px;
+}
+
+.infocontacto{
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.contcontacto{
+    margin-bottom: 40px;
 }
