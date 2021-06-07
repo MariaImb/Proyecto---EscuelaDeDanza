@@ -8,8 +8,8 @@
     --grisoscuro:  rgba(80, 78, 78);
     --verde: #1CA68D;
     --verdeoscuro: #0c776b;
-
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -20,24 +20,21 @@ html{
 }
 
 body{
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
 }
-
-  
 
 .nuevonav{
     background-color: rgba(80, 78, 78)!important; 
 }
 .contenidonav {
-
-    margin-right: 50px;
-    margin-left: 50px;
-
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .logo {
-    margin-left: 50px;
+    margin-left: 30px;
+   
 }
 
 .textonav {
@@ -45,14 +42,11 @@ body{
 }
 
 .main {
-
-    margin-top: 170px;
+    margin-top: 140px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-
 }
-
 
 .contenedor-escuela{
     background-image: url(/imagenes/bailarina2.png);
@@ -60,7 +54,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     width:100%;
-    height: 80%;
+    height: 50%;
 
 }
 
@@ -70,13 +64,13 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb( 59 140 140 / 30%);
-    height: 800px;
+    height: 650px;
 }
 
 .contenido-escuela h1{
     text-align: center;
     color: #f29863;
-    font-size: 70px;
+    font-size: 50px;
     font-style: italic;
     text-shadow: 1px 1px 3px var(--primario);
     
@@ -85,7 +79,7 @@ body{
 .contenido-escuela h2{
     text-align: center;
     color: #f2f2f2;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 5px;
     text-shadow: 1px 1px 3px var(--secundario);
     
@@ -101,7 +95,7 @@ body{
 .navbar ul li a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 20px;
     margin-left: 20px;
     text-transform: uppercase;
@@ -140,31 +134,35 @@ body{
 
 }
 
+/*STAFF*/
 .contenedor-staff{
     margin: 0 auto;
     padding-top: 50px;
     text-align: center;
     width: 80%;
+}
 
+.mainstaff{
+    background-color:#3b8c8c
 }
 
 .staff h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     color:#ffab7b;
     text-shadow: 1px 1px 0.5px var(--grisoscuro);
 }
 
 .staff h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #beeef1;
     text-shadow: 1px 1px 0.5px var(--grisoscuro);
 }
 
 .staff{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     padding: 8%;
     text-align: left;
@@ -172,10 +170,8 @@ body{
 }
 
 .cardstaff{
-    box-shadow: 1px 1px 3px grey;
-    border-radius: 20px;
+    border: none;
     background-color:var(--primario);
-
 }
 
 
@@ -184,9 +180,10 @@ body{
     color: #ffab7b;
     font-family: 'Montserrat', sans-serif !important;
     text-shadow: 1px 1px 0.5px var(--grisoscuro);
-
 }
 
+
+/* CONTACTO */
 .fondocontacto{
     background-color: var(--primario);
     height: 600px;
@@ -194,10 +191,29 @@ body{
 
 .infocontacto{
     color: white;
+    font-size: 14px!important;
     margin-bottom: 30px;
-
 }
 
 .contcontacto{
     margin-bottom: 40px;
+}
+
+.img-fluid{
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+.containerfooter{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.text-foter{
+    list-style: none;
+    color: white;
 }
