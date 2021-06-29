@@ -12,6 +12,7 @@
     --alternativo2: #B5CDCD;
     --alternativo3: #FC9F65;
     --alternativo4: #475F5F;
+    --alternativo5: #F0D5BD;
     --colorbarranv: #504e4e;
 
 }
@@ -174,7 +175,7 @@ body{
 .cargo{
   
     font-size: 25px;
-    color: #beeef1;
+    color: var(--alternativo5);
     text-shadow: 1px 1px 0.5px var(--grisoscuro);
 }
 
@@ -189,6 +190,7 @@ body{
     padding-left: 8%;
     padding-right: 8%;
     text-align: justify;
+    vertical-align: middle;
  
 }
 
@@ -199,7 +201,8 @@ body{
 }
 
 .card-body{
-  
+    display: flex;
+    align-items: center;
 }
 .imgstaff{
     max-height: 340px;
