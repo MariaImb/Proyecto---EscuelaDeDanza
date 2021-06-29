@@ -13,6 +13,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -87,38 +88,38 @@
                     </div>  
                 </div>                   
                 <div class="col-md-8">
-                    <div class="contactform">
+                    <form class="contactform" id="contactform" onsubmit="return validation()">
                         <div class="row">
                             <div class="col-md-8">
-                                <span id="lblResponse" class="tab-content"></span>
+                                <span id="respuesta" class="tab-content"></span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <input name="tbName" type="text" id="tbName" class="form-control my-3" placeholder="Nombre">
+                                <input name="nombre" type="text" id="nombre" class="form-control my-3" placeholder="Nombre">
                             </div>
                             <br>
                             <div class="col-md-6">
-                                <input name="tbEmail" type="text" id="tbEmail" class="form-control my-3" placeholder="Email">
+                                <input name="email" type="text" id="email" class="form-control my-3" placeholder="Email">
                             </div>
                             <br>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input name="tbSubjct" type="text" id="tbSubject" class="form-control my-3" placeholder="Asunto">
+                                <input name="asunto" type="text" id="asunto" class="form-control my-3" placeholder="Asunto">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <textarea name="tbMessage" row="10" id="tbMessage" cols="30" class="form-control my-3" placeholder="Mensaje"></textarea>
+                                <textarea name="mensaje" row="10" id="mensaje" cols="30" class="form-control my-3" placeholder="Mensaje"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 contbutton">
-                                <input type="submit" name="btnSendMsg" value="Enviar" id="btnSendMsg" type="submit" class="btn btn-lg btn-submit btn-outline-light">
+                                <input type="submit" name="submit" value="enviar" id="submit" class="btn btn-lg btn-submit btn-outline-light">
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>               
             </div>                
         </div>   
@@ -172,5 +173,6 @@
         </div>
 
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
