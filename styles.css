@@ -50,6 +50,10 @@ body{
     color: #f2f2f2!important;
 }
 
+.navbar{
+    visibility: visible;
+    transition: hidden 3s ease-in-out;
+}
 .main {
     margin-top: 110px;
     background-size: 2000px; 
@@ -77,10 +81,16 @@ body{
 
 .contenido-escuela h1{
     text-align: center;
-    color: #f29863;
-    font-size: 50px;
-    font-style: italic;
-    text-shadow: 1px 1px 3px var(--primario);
+    /*color: #f29863;*/
+    color:#ff9a5f;
+    
+    font-size: 60px;
+    letter-spacing: 5px;
+    /*background-color: rgb( 255 255 255 / 60%);*/
+    background-color: rgb(80 78 78 / 50%);
+    padding: 10px 70px;
+    font-weight: 400;
+    font-family: 'Pinyon Script', cursive;
 }
 
 .contenido-escuela h2{
@@ -88,7 +98,9 @@ body{
     color: #f2f2f2;
     font-size: 60px;
     letter-spacing: 5px;
-    text-shadow: 1px 1px 3px var(--secundario);   
+    /*background-color: rgb( 242 152 99 / 50%);
+    /*text-shadow: 1px 1px 3px var(--secundario);  */ 
+   
 }
 
 .navbar p {
@@ -175,7 +187,7 @@ body{
 .nombre{                       
     font-size: 30px;
     color:#ffab7b;
-    text-shadow: 1px 1px 0.5px var(--grisoscuro);
+    /*text-shadow: 1px 1px 0.5px var(--grisoscuro);*/
     text-align: left;
 }
 
@@ -183,7 +195,7 @@ body{
   
     font-size: 25px;
     color: var(--alternativo5);
-    text-shadow: 1px 1px 0.5px var(--grisoscuro);
+    /*text-shadow: 1px 1px 0.5px var(--grisoscuro);*/
 }
 
 
@@ -233,6 +245,11 @@ body{
     color: white;
     font-size: 14px!important;
     padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.infocontacto h3{
+    font-size: 20px;
 }
 
 .contcontacto{
@@ -241,13 +258,38 @@ body{
 
 .contbutton{
     margin-bottom: 30px;
+ 
+}
+.btn-submit{
+    background-color: #475F5F;
 }
 
+.btn-submit:hover{
+    background-color:#FC9F65;
+    color:#504e4e;
+
+}
 .titulocontacto{
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 400;
     text-shadow: none;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
+
+.contenedortitulo{
+    background-color: rgb(80 78 78 / 40%);
+}
+
+
+.contenedortitulo h1{
+    padding-top: 10px;
+}
+
+.contenedortitulo p{
+    font-size: 18px;
+}
+
 
 iframe {
     margin-bottom: 30px;    
@@ -257,6 +299,26 @@ iframe {
 textarea{
     height: 200px!important;
 }
+
+
+.error{
+    font-size: 16px;
+    text-align: center;
+    background-color:#475F5F;
+    color:#FC9F65;
+    padding: 20px;
+}
+
+
+.correcto{
+    font-size: 16px;
+    text-align: center;
+    background-color:#475F5F;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
 /*HORARIOS*/
 
 .fondohorarios{
