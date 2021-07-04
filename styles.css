@@ -115,6 +115,7 @@ body{
 }
 
 
+
 .navbar ul li a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -123,6 +124,12 @@ body{
     margin-left: 20px;
     text-transform: uppercase;
 }
+
+.activo{
+    color:#f29863!important;
+
+}
+
 
 .dropdown-item:hover {
     width: 80%; 
@@ -356,13 +363,17 @@ textarea{
     text-transform: uppercase;
     margin-bottom: 8px;
     padding-bottom: 8px;
-    /* color:#1CA68D; */
     color:#FC9F65;
 }
 
 .text-footer li p {
     margin-bottom: 7px;
     color:#F0D5BD;
+
+}
+
+.text-footer li a{
+    text-decoration: none;
 }
 
 .footer{
