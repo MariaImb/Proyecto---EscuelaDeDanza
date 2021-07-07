@@ -245,7 +245,6 @@ body{
 
 .imgmiriam {
     border-radius: 10px;
-
 }
 
 
@@ -265,6 +264,11 @@ body{
 
 }
 
+
+
+
+
+/*STAFF*/
 .mainstaff{
     /*background-color:#3b8c8c;*/
     margin-top: 110px;
@@ -515,6 +519,88 @@ textarea{
     color: red;
 }
 
+
+/*CLASES*/
+.contenedor-clases{
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-clase{
+    width:90%;
+    margin: auto;
+}
+
+
+/*DISCIPLINAS*/
+.maindisciplinas{
+    margin-top: 110px;
+   
+}
+
+
+.v2 {
+    background-color: #72aeb1;
+}
+
+.v1{
+    background-color:#504e4e;
+}
+.textodisciplina2{
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    margin: auto 0 auto auto;
+    text-indent: 40px;
+    line-height: 30px;
+    padding-right: 40px;
+}
+
+.textodisciplina1{
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    margin: auto 0 auto auto;
+    text-indent: 40px;
+    line-height: 30px;
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.disciplina2{
+    text-transform: uppercase;
+    font-size: 25px;
+    color:#475F5F;
+    padding: 0px 12px;
+    margin: auto auto auto auto;
+    width: 100%;
+    font-weight:700;
+
+}
+
+
+.disciplina1{
+    text-transform: uppercase;
+    font-size: 25px;
+    color:#f29863;
+    padding: 0px 12px;
+    margin: auto auto auto auto;
+    width: 100%;
+    font-weight:700;
+    text-align: right;
+}
+
+.last{
+    margin-bottom: 50px;
+}
+
+.bodydisciplinas{
+    background-color: #72aeb1;
+}
+
+
 @media (max-width: 780px) {
     .contenedor-redes, .text-footer { 
         display: flex;
@@ -550,6 +636,9 @@ textarea{
     .contbutton{
         text-align: center;
     }
+    .contenedor-index{
+        width: 90%;
+    }
     .escuela1 h3{
         padding-top: 20px;
     }
@@ -566,16 +655,18 @@ textarea{
         width: 100%;
         margin-top: 20px;
     }
-}
+    .disciplina1, .disciplina2 {
+        padding: 10px 0px;
+        text-align: center;
+    }
 
-/*CLASES*/
-.contenedor-clases{
-    width: 65%;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    .textodisciplina1, .textodisciplina2{
+        padding: 0px 12px;
 
-.v1 h2{
-    text-align: right;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .textodisciplina1 p, .textodisciplina2 p {
+        padding-top: 20px;
+    }
 }
