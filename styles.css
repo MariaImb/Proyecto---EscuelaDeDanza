@@ -189,7 +189,7 @@ body{
     text-align: justify;
     margin: auto 0 auto auto;
     text-indent: 40px;
-    line-height: 40px;
+    line-height: 35px;
 }
 .escuela blockquote{
     font-size: 17px;
@@ -546,7 +546,7 @@ textarea{
 }
 
 .v1{
-    background-color:#504e4e;
+    background-color:#6d6d6d;
 }
 .textodisciplina2{
     font-size: 17px;
@@ -641,14 +641,18 @@ textarea{
     }
     .escuela1 h3{
         padding-top: 20px;
+        text-align: center;
     }
     .escuela1 ul li{
-        text-align: center;
+     
+        padding-left: 25%;
+        text-align: left;
     }
     .escuela p, .escuela h2{
         width: 100%;
         margin: 0px;
         padding-top: 20px;
+     
     }
     .escuela blockquote {
         margin: 0px;
