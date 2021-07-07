@@ -15,6 +15,9 @@ const email = document.querySelector('#email');
 const telefono = document.querySelector('#telefono');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
+
+
+
 const formulario = document.querySelector('.contactform');
 
 nombre.addEventListener('input', leerTexto);
@@ -22,6 +25,14 @@ email.addEventListener('input', leerTexto);
 telefono.addEventListener('input', leerTexto);
 asunto.addEventListener('input', leerTexto);
 mensaje.addEventListener('input', leerTexto);
+
+function leerTexto(event) {
+    console.log(event.target.value);
+    datos[event.target.id] = event.target.value;
+    console.log(datos);
+}
+
+
 
 
 formulario.addEventListener('submit', function(event){
@@ -46,7 +57,7 @@ formulario.addEventListener('submit', function(event){
     }
 
     if(isNaN(telefono) || telefono.length != 10){
-        mostrarError('Por favor ingrese un námero de teléfono válido')
+        mostrarError('Por favor ingrese un número de teléfono válido')
         return;
     }
 
@@ -65,11 +76,7 @@ formulario.addEventListener('submit', function(event){
     mostrarMensaje('Mensaje enviado correctamente');
 });
 
-function leerTexto(event) {
-    // console.log(event.target.value);
-    datos[event.target.id] = event.target.value;
-    //console.log(datos);
-}
+
 
 //Muestra una alerta de que se envio correctamente
 function mostrarMensaje(mensaje) {
@@ -90,7 +97,7 @@ function mostrarError(mensaje) {
     error.textContent = mensaje;
     error.classList.add('error');
     formulario.appendChild(error);
-    //Desaparexca despues de 5 seg
+    //Desaparece despues de 5 seg
     setTimeout(() => {
         error.remove();
     }, 5000);
